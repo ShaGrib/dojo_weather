@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.line {
+    border-bottom: 3px solid black;
+    width: 1000px;
+}
+
+.talign {
+    text-align: center;
+}
+
+.padding {
+    padding: 5px 5px;
+}
+
+.margin {
+    margin:  10px 20px;
+}
+
+.weatherbox, .cookie {
+    margin: 1rem;
+    background-color: lightgray;
+}
+
+.weatherbox {
+    width: 200px;
+}
+
+.cookie {
+    border: 2px solid black;
+    padding: 1rem;
+    position: fixed;
+    bottom: 2rem;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- full container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="flexed">
+            <h1>DojoWeather</h1>
+            <!-- right header -->
+            <ul class="flexed">
+                <li onclick="runWeath">
+                    <h3>Burbank</h3>
+                </li>
+                <li onclick="runWeath">
+                    <h3>Chicago</h3>
+                </li>
+                <li onclick="runWeath">
+                    <h3>Dallas</h3>
+                </li>
+            </ul>
+        </header>
+        <!-- mid navbar -->
+        <nav class="flexed">
+            <h2>San Jose</h2>
+            <div class="flexed">
+                <Label for="temps">show temperature in:</Label>
+                <select name="temps" id="temps">
+                    <option value="C">C*</option>
+                    <option value="F">F*</option>
+                </select>
+            </div>
+        </nav>
+        <div class="line"></div>
+        <!-- weather forecast -->
+        <main class="flexed">
+            <!-- Today slot -->
+            <div class="weatherbox">
+                <h3 class="talign">Today</h3>
+                <img src="./assets/some_rain.png" alt="rain">
+                <p class="talign">some rain</p>
+                <div class="flexed margin">
+                    <h3>24*</h3>
+                    <h3>18*</h3>
+                </div>
+            </div>
+            <!-- Tomorrow slot -->
+            <div class="weatherbox">
+                <h3 class="talign">Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p class="talign">some sun</p>
+                <div class="flexed margin">
+                    <h3>27*</h3>
+                    <h3>19*</h3>
+                </div>
+            </div>
+            <!-- Friday slot -->
+            <div class="weatherbox">
+                <h3 class="talign">Friday</h3>
+                <img src="./assets/some_clouds.png" alt="clouds">
+                <p class="talign">some clouds</p>
+                <div class="flexed margin">
+                    <h3>21*</h3>
+                    <h3>16*</h3>
+                </div>
+            </div>
+            <!-- Saturday slot -->
+            <div class="weatherbox">
+                <h3 class="talign">Saturday</h3>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p class="talign">some sun</p>
+                <div class="flexed margin">
+                    <h3>26*</h3>
+                    <h3>21*</h3>
+                </div>
+            </div>
+        </main>
+        <!-- cookie -->
+        <footer id="cookie" class="flexed cookie">
+            <img src="./assets/cookie.png" alt="cookie">
+            <div>
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not edible ones) to personalize content and ads, to provide social media features  and to analyze our traffic. <a href="#">Read more..</a></p>
+            </div>
+            <button onclick = "remCook()">I Accept</button>
+        </footer>
+    </div>
+    <script src="./script.js"></script>r
+</body>
+</html>
